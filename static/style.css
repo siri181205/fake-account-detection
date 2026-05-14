@@ -1,0 +1,76 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+/* CARD DESIGN */
+.card{
+    width:420px;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    color:white;
+    text-align:center;
+    box-shadow:0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* INPUTS */
+input,select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+}
+
+/* BUTTON */
+button,.btn{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:10px;
+    background:#00c6ff;
+    color:white;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+}
+
+/* DASHBOARD GRID */
+.dashboard{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:20px;
+}
+
+/* BOX */
+.box{
+    padding:15px;
+    background:rgba(255,255,255,0.15);
+    border-radius:12px;
+}
+
+/* TABLE */
+table{
+    margin-top:15px;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}

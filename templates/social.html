@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Select Platform</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+<h1>Select Social Media</h1>
+
+<form action="/result" method="post">
+
+<button name="platform" value="Instagram">📷 Instagram</button><br><br>
+<button name="platform" value="Facebook">📘 Facebook</button><br><br>
+<button name="platform" value="Twitter">🐦 Twitter</button><br><br>
+<button name="platform" value="YouTube">▶ YouTube</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

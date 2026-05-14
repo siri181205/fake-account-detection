@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>History</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="card">
+<h1>Checked Accounts Report</h1>
+
+<table border="1" style="width:100%; color:white; border-collapse:collapse;">
+
+<tr>
+<th>Username</th>
+<th>Platform</th>
+<th>Result</th>
+<th>Accuracy</th>
+</tr>
+
+{% for row in data %}
+<tr>
+<td>{{ row.username }}</td>
+<td>{{ row.platform }}</td>
+<td>{{ row.result }}</td>
+<td>{{ row.accuracy }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/" class="btn">Home</a>
+
+</div>
+
+</body>
+</html>

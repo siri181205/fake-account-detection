@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+
+<h1>Result Dashboard</h1>
+
+<h2>{{ platform }}</h2>
+
+<h2 style="color:{{color}};">{{ prediction }}</h2>
+
+<h3>Confidence: {{ confidence }}%</h3>
+
+<div class="dashboard">
+
+<div class="box">
+<h3>Risk Score</h3>
+<h2>{{ confidence }}%</h2>
+</div>
+
+<div class="box">
+<h3>Status</h3>
+<h2>{{ prediction }}</h2>
+</div>
+
+</div>
+
+<br>
+
+<a href="/history" class="btn">View History</a>
+<a href="/" class="btn">Home</a>
+
+</div>
+
+</body>
+</html>

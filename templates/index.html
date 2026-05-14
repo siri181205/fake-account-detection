@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Detection</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+<h1>Enter Account Details</h1>
+
+<form action="/social" method="post">
+
+<input type="text" name="username" placeholder="Username" required>
+
+<input type="number" name="followers" placeholder="Followers" required>
+<input type="number" name="following" placeholder="Following" required>
+<input type="number" name="posts" placeholder="Posts" required>
+
+<select name="profile_pic">
+<option value="1">Profile Picture Yes</option>
+<option value="0">Profile Picture No</option>
+</select>
+
+<!-- ✅ NEW ACCOUNT AGE INPUT -->
+<input type="number" name="account_age" placeholder="Account Age" required>
+
+<select name="age_unit">
+<option value="days">Days</option>
+<option value="years">Years</option>
+</select>
+
+<button type="submit">Next</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
